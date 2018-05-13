@@ -4,19 +4,10 @@
 
 <!-- Prevent smartphones from scaling pages down -->
 <meta name="viewport" content="initial-scale=1">
-@media (max-width: 768px) {
-    
-
-
-@media (max-width: 992px) {
-}
-
-@media (max-width: 1200px) {
-
-}
 
 	body {
 		background: #fff;
+    width: 100vw;
 	}
 
 	body, input, select, textarea {
@@ -87,6 +78,14 @@
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+
+  #header .menubar {
+    display: none;
+    color: #f9e42e;
+    padding-top: none;
+    font-size: 1.5em;
+    margin-right: 20px;
+  }
 
 	sub {
 		font-size: 0.8em;
@@ -842,7 +841,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		.wrapper.style1 {
@@ -983,13 +982,16 @@
 
 	#banner {
 		background-color: #666666;
- background="blackandwhite.jpg">
-		background-size: cover;
+    background="blackandwhite.jpg">
+		background-size: contain;
 		background-position: center center;
 		background-repeat: no-repeat;
 		color: #d8d8d8;
 		text-align: center;
 		position: relative;
+    max-height: 120vh;
+    overflow: hidden;
+    /*height: 50%;*/
 	}
 
 
@@ -1039,16 +1041,24 @@
 			min-width: 12em;
 		}
 
+    #textcontain {
+      width: 100vw;
+    }
+
+
 		#banner h2 {
-			font-size: 3.5em;
+			font-size: 1.5em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
+      /*margin: 20px auto;*/
+      text-align: center;
 			padding: 0;
 		}
 
 		#banner p {
-			font-size: 1.5em;
+			font-size: 1em;
 			margin-bottom: 2em;
+      text-align: center;
 		}
 
 			#banner p a {
@@ -1060,7 +1070,7 @@
 
 	#footer {
 		background: #f8f8f8;
-		padding: 4em 0 6em 0;
+		padding: 4em 2em 6em 2em;
 	}
 
 		#footer a {
@@ -1092,3 +1102,52 @@
 		#footer .icons a {
 			color: #bbb;
 		}
+
+  .6u h2 {
+    padding-left: 2em;
+  }
+
+
+    @media screen and (max-width: 768px) {
+      #header .drop{
+        display: none;
+      }
+
+      #header .dropped {
+        display: block;
+        text-align: center;
+        width: 100%;
+        /*position: relative;*/
+        margin:0;
+        /*top: 25px;*/
+        background-color: rgba(255,255,255,.9);
+        border-radius: 0px;
+        padding: 0 10px 0 10px;
+      }
+
+      #header .dropped a {
+        display: block;
+        width: 100%;
+        /*color: white;*/
+        font-size: 1em;
+      }
+
+      #header .dropped a:hover {
+        /*background-color: #033048;*/
+      }
+
+      #header .menubar {
+        display: block;
+        text-align: right;
+        margin-top: 0px;
+      }
+
+    }
+
+
+    @media (max-width: 992px) {
+    }
+
+    @media (max-width: 1200px) {
+
+    }

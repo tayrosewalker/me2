@@ -20,13 +20,13 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
-		
+
 		/* width: (containers) */
 		width: 1200px;
 	}
 
 	/* Modifiers */
-	
+
 		.container.small {
 			/* width: (containers) * 0.75; */
 			width: 900px;
@@ -50,7 +50,7 @@
 	.\39 u { width: 75% }
 	.\38 u { width: 66.6666666667% }
 	.\37 u { width: 58.3333333333% }
-	.\36 u { width: 50% }
+	.\36 u { width: 100% }
 	.\35 u { width: 41.6666666667% }
 	.\34 u { width: 33.3333333333% }
 	.\33 u { width: 25% }
